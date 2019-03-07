@@ -1,0 +1,73 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes twocolors {
+  from {color: red;}
+  to   {color: yellow;}
+}
+
+@keyframes fourcolors {
+  0%   {fill: red;}
+  25%  {fill: yellow;}
+  50%  {fill: blue;}
+  100% {fill: green;}
+}
+
+#intro {
+  height: 100vh;
+  background-image: url("http://www.coltonmalone.com/assets/intro_bg_2-048595d9b5a8d157934ae7a3d3f71b4e901dd01be7424bd14a0172392e0c0485.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro svg {
+  height: 120px;
+}
+
+#intro h1 {
+  font-size: 48px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* h1 {
+  animation-name: fourcolors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  padding-bottom: 0
+} */
+
+/* h1:hover {
+  transform: translateY(-50%);
+  transition: translateY 1s ease-in-out;
+} */
+
+img.brand {
+  animation-name: fourcolors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+svg path {
+  animation-name: fourcolors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+img.brand:hover {
+  transform: translateY(-50%);
+  transition: translateY 1s ease-in-out;
+}
